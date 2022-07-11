@@ -4,17 +4,13 @@
     <Banner />
     <HotGames />
     <DragonFestival />
-    <div class="home__list">
-      <ListMenu />
-      <ListItems />
-    </div>
+    <ListItems />
   </div>
 </template>
 <script>
 import Header from './../components/Header.vue'
 import Banner from './../components/Banner.vue'
 import HotGames from './../components/HotGames.vue'
-import ListMenu from './../components/ListMenu.vue'
 import ListItems from './../components/ListItems.vue'
 import DragonFestival from './../components/DragonFestival.vue'
 
@@ -25,7 +21,6 @@ export default {
     Header,
     Banner,
     HotGames,
-    ListMenu,
     ListItems,
     DragonFestival
   },
