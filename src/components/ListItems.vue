@@ -1,0 +1,112 @@
+<template>
+  <div class="container">
+    <div class="games-list">
+      <div class="row">
+        <div class="col-2 pr-7">
+          <div class="games-list__categories">
+            <div class="categories__item mb-10">
+              <img
+                src="./../assets/categories/used-active.png"
+                alt="category image"
+              />
+            </div>
+            <div class="categories__item mb-10">
+              <img src="./../assets/categories/live.png" alt="category image" />
+            </div>
+            <div class="categories__item mb-10">
+              <img
+                src="./../assets/categories/sport.png"
+                alt="category image"
+              />
+            </div>
+            <div class="categories__item mb-10">
+              <img
+                src="./../assets/categories/lottery.png"
+                alt="category image"
+              />
+            </div>
+            <div class="categories__item mb-10">
+              <img
+                src="./../assets/categories/poker.png"
+                alt="category image"
+              />
+            </div>
+            <div class="categories__item">
+              <img src="./../assets/categories/game.png" alt="category image" />
+            </div>
+          </div>
+        </div>
+        <div class="col-10 pl-7">
+          <div class="games-list__item mb-15 maintain">
+            <img src="./../assets/games/game-1.png" alt="game image" srcset="" />
+            <button>Maintained</button>
+          </div>
+          <div class="games-list__item mb-15">
+            <img src="./../assets/games/game-2.png" alt="game image" srcset="" />
+          </div>
+          <div class="games-list__item mb-15">
+            <img src="./../assets/games/game-3.png" alt="game image" srcset="" />
+          </div>
+          <div class="games-list__item mb-15">
+            <img src="./../assets/games/game-4.png" alt="game image" srcset="" />
+          </div>
+             <div class="games-list__item mb-15">
+            <img src="./../assets/games/game-3.png" alt="game image" srcset="" />
+          </div>
+          <div class="games-list__item">
+            <img src="./../assets/games/game-4.png" alt="game image" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
+
+<style lang="scss">
+.games-list {
+   .games-list__item {
+       &.maintain {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+        button {
+            position: absolute;
+            top: 27.5%;
+            right: 25%;
+            background-color: #000;
+            color: #c5c0b7;
+            min-height: 45%;
+            min-width: 50%;
+            border-radius: 25px;
+            border: 0;
+            opacity: 0.8;
+            z-index: 99999;
+        }
+       }
+
+   }
+
+    img {
+        max-width: 100%;
+    }
+  }
+
+</style>

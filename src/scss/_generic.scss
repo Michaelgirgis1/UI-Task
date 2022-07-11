@@ -1,0 +1,25 @@
+
+* {
+
+    font-family: 'Open Sans', sans-serif;
+}
+.section-title {
+    color: $primaryColor;
+    text-align: left;
+    font-size: 24px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.pr-7 {
+    padding-right: 7px !important;
+}
+.pl-7 {
+    padding-left: 7px !important;
+}
+.container {
+    overflow: hidden;
+}
