@@ -6,6 +6,7 @@
 
 <style lang="scss">
 .main-banner {
+    margin-bottom: 10px;
     img {
         max-width: 100%;
     }
