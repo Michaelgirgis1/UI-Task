@@ -3,6 +3,7 @@
     <Header />
     <Banner />
     <HotGames />
+    <DragonFestival />
     <div class="home__list">
       <ListMenu />
       <ListItems />
@@ -15,6 +16,8 @@ import Banner from './../components/Banner.vue'
 import HotGames from './../components/HotGames.vue'
 import ListMenu from './../components/ListMenu.vue'
 import ListItems from './../components/ListItems.vue'
+import DragonFestival from './../components/DragonFestival.vue'
+
 
 export default {
   name: "Home",
@@ -23,7 +26,8 @@ export default {
     Banner,
     HotGames,
     ListMenu,
-    ListItems
+    ListItems,
+    DragonFestival
   },
   data() {
     return {

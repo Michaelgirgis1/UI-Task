@@ -52,6 +52,7 @@ export default {
 
 <style lang="scss">
 .hot-games {
+  margin-bottom: 15px;
   &.container {
     padding-inline-end: 0;
   }
