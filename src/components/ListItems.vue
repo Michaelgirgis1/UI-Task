@@ -37,8 +37,9 @@
           </div>
         </div>
         <div class="col-10 pl-7">
-          <div class="games-list__item mb-15">
+          <div class="games-list__item mb-15 maintain">
             <img src="./../assets/games/game-1.png" alt="game image" srcset="" />
+            <button>Maintained</button>
           </div>
           <div class="games-list__item mb-15">
             <img src="./../assets/games/game-2.png" alt="game image" srcset="" />
@@ -71,6 +72,37 @@ export default {
 
 <style lang="scss">
 .games-list {
+   .games-list__item {
+       &.maintain {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+        button {
+            position: absolute;
+            top: 27.5%;
+            right: 25%;
+            background-color: #000;
+            color: #c5c0b7;
+            min-height: 45%;
+            min-width: 50%;
+            border-radius: 25px;
+            border: 0;
+            opacity: 0.8;
+            z-index: 99999;
+        }
+       }
+
+   }
 
     img {
         max-width: 100%;
