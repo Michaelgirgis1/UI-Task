@@ -5,6 +5,7 @@
     <HotGames />
     <DragonFestival />
     <ListItems />
+    <AppBar />
   </div>
 </template>
 <script>
@@ -13,6 +14,8 @@ import Banner from './../components/Banner.vue'
 import HotGames from './../components/HotGames.vue'
 import ListItems from './../components/ListItems.vue'
 import DragonFestival from './../components/DragonFestival.vue'
+import AppBar from './../components/AppBar.vue'
+
 
 
 export default {
@@ -22,7 +25,8 @@ export default {
     Banner,
     HotGames,
     ListItems,
-    DragonFestival
+    DragonFestival,
+    AppBar
   },
   data() {
     return {

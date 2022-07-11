@@ -13,22 +13,21 @@
             </div>
             <div class="dragon-festival__price__content">
               <div class="dragon-festival__price__content__crown">
-                   <img
-                class="ken-image"
-                src="./../assets/festival/KEN.png"
-                alt="ken image"
-                srcset=""
-              />
-              <img
-                class="crown-image"
-                src="./../assets/festival/crown.png"
-                alt="crown image"
-                srcset=""
-              />
-              <span>7</span>
-
+                <img
+                  class="ken-image"
+                  src="./../assets/festival/KEN.png"
+                  alt="ken image"
+                  srcset=""
+                />
+                <img
+                  class="crown-image"
+                  src="./../assets/festival/crown.png"
+                  alt="crown image"
+                  srcset=""
+                />
+                <span>7</span>
               </div>
-           
+
               <p><span>$</span>121212233</p>
             </div>
           </div>
@@ -36,13 +35,14 @@
         <div class="col-2"></div>
         <div class="col-5">
           <div class="dragon-festival__brief">
-          
             <p>
-                <img
-              src="./../assets/festival/price-voice.png"
-              alt="dragon festival voice image "
-              srcset=""
-            />:Dragon Boat Festival holiday!holiday!holiday!holiday! Dragon Boat Festival</p>
+              <img
+                src="./../assets/festival/price-voice.png"
+                alt="dragon festival voice image "
+                srcset=""
+              />:Dragon Boat Festival holiday!holiday!holiday!holiday! Dragon
+              Boat Festival
+            </p>
           </div>
         </div>
       </div>
@@ -63,17 +63,20 @@
     .dragon-festival__price__img {
       margin-inline-end: 15px;
       img {
-        
-        max-width: 50px;
-        }
+        max-width: 30px;
+      }
     }
   }
   .dragon-festival__price__content {
     .dragon-festival__price__content__crown {
       margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      span {
+        color: $primaryColor;
+      }
     }
     img {
-
       margin-inline-end: 10px;
     }
     .crown-image {
@@ -98,7 +101,6 @@
     }
   }
   .dragon-festival__brief {
-
     display: flex;
     align-items: self-start;
     img {
